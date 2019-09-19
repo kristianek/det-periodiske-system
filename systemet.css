@@ -1,0 +1,83 @@
+body{
+  margin: 0px; /* Fjerner margen rundt hele nettsiden */
+  font-family: helvetica;
+}
+
+nav{
+  background-color: #1565c0; /* Velger en bakgrunnsfarge på Navigasjonsbaren*/
+  display: flex; /* Gjør navigasjonsbaren til en flexbox */
+}
+nav a{ /* Velger alle a-elemtenter som ligger inne i nav */
+  color: white; /* Velger skritftfarge på lenkene */
+  text-decoration: none; /* Fjerner understrek på lenkene */
+  padding: 25px; /* Lager 25px med "luft" rundt lenkene */
+}
+nav .active{ /* Velger klassen active inne i nav */
+  background-color: #0d47a1;
+}
+nav a:hover:not(.active){ /* velger a-elenmenter som musen er over inne i nav, men ikke elementer som har klassen active */
+  background-color: #82b1ff; /* Setter bakgrunnsfarge */
+}
+.systemet{
+  display: grid;
+  grid-template-columns: repeat(18,1fr);
+  grid-gap: 5px;
+  margin: 10px;
+}
+.span-16{
+  grid-column: span 16;
+}
+.span-10{
+  grid-column: span 10;
+}
+.usynlig{
+  opacity: 0;
+}
+.grunnstoff{
+  border-style: solid;
+  border-radius: 8px;
+  border-color: orange;
+}
+.grunnstoff:hover{
+  background-color: orange;
+  color: white;
+  transform: scale(1.02);
+}
+ .tall, .navn{
+   text-align: center;
+ }
+ .tall{
+   font-size: 20px;
+ }
+
+ .edelgasser{
+   background-color: lightblue;
+ }
+
+.alkali{
+    background-color: lightgreen;
+}
+.jordalk{
+    background-color: #de97de;
+}
+.ikkemetall{
+    background-color: #ffbb6e;
+}
+.halogen{
+    background-color: #eb6060;
+}
+
+ h1{
+   margin: 20px;
+   margin-bottom: 30px;
+ }
+ h2{
+   margin: 10px;
+ }
+ p{
+   margin: 10px;
+ }
+ img{
+   margin-left: 20px;
+   margin-top: 15px;
+ }
