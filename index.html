@@ -1,27 +1,87 @@
 <!DOCTYPE html>
-<html lang="no" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="systemet.css">
+    <title>Vintage Hunters</title>
+    <link rel="stylesheet" href="style.css">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAHMgvU0vVaWA6q-1eOsr3EImBWOqpC1vk",
+        authDomain: "nettsideprosjekt.firebaseapp.com",
+        databaseURL: "https://nettsideprosjekt.firebaseio.com",
+        projectId: "nettsideprosjekt",
+        storageBucket: "nettsideprosjekt.appspot.com",
+        messagingSenderId: "26242327490",
+        appId: "1:26242327490:web:2d7317bf3ece559f20ac5b"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
   </head>
   <body>
     <header>
+        <img id="logo" src="Bilder/Logo/Logo5.png" alt="Logo">
       <nav>
-        <a href="index.html">Hjem</a>
-        <a class="active" href="systemet.html">Systemet</a>
-        <a href="historie.html">Historie</a>
-        <a href="om-meg.html">Om meg</a>
+        <a id="omoss" href="omoss.html">Om oss</a>
+        <a id="shop" href="shop.html">SHOP</a>
       </nav>
     </header>
     <main>
-      <h2>Hjem</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <section class="indexGridContainer">
+        <section class="gridCol1">
+          <div class="gridElement1">
+            <img src="Bilder/Grid/vindu.jpg" alt="Vindu">
+          </div>
+          <div class="gridElement2">
+            <img src="Bilder/Grid/aha.jpg" alt="Aha">
+          </div>
+        </section>
+        <section class="gridCol2">
+          <div class="gridElement3">
+            <img src="Bilder/Grid/Blomster3.gif" alt="Blomster">
+          </div>
+          <div class="gridElement4">
+            <img src="Bilder/Grid/vinyl.jpg" alt="Vinylplate">
+          </div>
+        </section>
+        <section class="gridCol3">
+          <div class="gridElement5">
+            <img src="Bilder/Grid/cover.jpg" alt="Cover">
+          </div>
+          <div class="gridElement6">
+            <img src="Bilder/Grid/dame3.png" alt="Dame">
+          </div>
+        </section>
+      </section>
     </main>
     <footer>
-
+      <section class="footerGrid">
+        <section>
+          <h4>Info</h4>
+          <a href="omoss.html">Om oss</a>
+        </section>
+        <section>
+          <section class="soMeGrid">
+            <div><img src="Bilder/Ikoner/instagram.png" alt="Instagram"></div>
+            <div><img src="Bilder/Ikoner/facebook.png" alt="Facebook"></div>
+            <div><img src="Bilder/Ikoner/snapchat.png" alt="Snapchat"></div>
+          </section>
+          <div id="span3"><p id="p2">@vintagehunters</p></div>
+        </section>
+        <section>
+          <h4>Kontakt oss</h4>
+          <a href="mailto:kundeservice@vintagehunters.com">kundeservice@vintagehunters.com</a>
+        </section>
+      </section>
+      <p id="copyRight">&copy; 2020 Vintage Hunters</p>
     </footer>
   </body>
 </html>
